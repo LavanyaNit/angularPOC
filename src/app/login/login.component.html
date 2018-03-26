@@ -1,0 +1,74 @@
+
+
+<div class=" container">
+  <div *ngIf="errorFlag" class="alert alert-danger">
+    Invalid Username or Password!
+  </div>
+  <div class="loginDiv {{errorFlag}}">
+
+    <div class="flyingClubLoginRight homepage " id="loginwidget">
+      <form id="loginForm" #frm="ngForm" >
+
+        <h2 class="fclDialogHeader "></h2>
+        <input type="text" name="username" id="usernm"
+               class="col-xl-12 col-sm-12 col-md-12"
+               required
+               ngModel
+               pattern="[0-9]*"
+               minlength="10"
+               maxlength="12"
+               #ngUserName="ngModel"
+               [(ngModel)]="username"
+               placeholder="Email address or Flying Club Number... " >
+        <div *ngIf="ngUserName?.touched && ngUserName?.invalid" class="alert alert-danger">
+            Invalid Username!
+        </div>
+
+        <input type="password"
+               placeholder="Password"
+               class="col-xl-12 col-sm-12 col-md-12"
+               id="pwd"
+               name="password"
+               value=""
+               ngModel
+               #psword="ngModel"
+               pattern="^[a-zA-Z0-9_]*$"
+               minlength="6"
+               maxlength="10"
+               [(ngModel)]="password"
+               required >
+        <div *ngIf="psword?.touched && psword?.invalid" class="alert alert-danger">
+            Invalid Password!
+        </div>
+        <span class="fclForgotPwdLink ">
+    <a  class="fclDialogSmallFont linkButton forgotLink ">I've forgotten my Flying Club Number</a>
+    <span class="fclDialogSmallFont linkButton forgotLink ">or</span>
+        <a class="fclDialogSmallFont linkButton">
+        password
+        </a>
+        <img title="" alt="" src="" class="smallWhiteArrow">
+    </span>
+        <div class="clr buttonContainer ">
+          <button value=">"  name="Submit" (click)="onLogin()" type="submit" class="btn btn-light" [disabled]="!frm.valid" id="submit1">
+            <span class="floatLeft text ">Log in </span> <img title="" alt="" src="">
+          </button>
+
+        </div>
+        <div class="clr white_line ">
+          <img alt="" class="white_line_image" src="">
+        </div>
+      </form>
+      <div class="clr fclDialogNotMember ">Not a member yet? This is where your adventure starts.
+        <div class="headerLinks buttonCommon " aria-expanded="false">
+          <button class="btn btn-light" routerLink="/register">Join Flying Club</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,17 @@
+ {
+  "user": [{
+    "username": "1234567890",
+    "password": "Virgin123",
+    "flyingClub": 1234567890,
+    "miles": 300000,
+    "name": "Lavanya"
+  },
+    {
+      "username": "9876543210",
+      "password": "Virgin123",
+      "flyingClub": 9876543210,
+      "miles": 1500000,
+      "name": "Nivedha"
+    }]
+}
+

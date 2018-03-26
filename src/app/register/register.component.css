@@ -1,0 +1,22 @@
+.formFieldTab{
+  background-color: white;
+  border-left-color: blue;
+  border-left-width: 4px;
+  height:50px;
+}
+
+.formCustom{
+  width: 30%;
+  align-content: left;
+  display: inline-block;
+  margin-right: 2%;
+}
+.rightArrow{
+  background: url('../../assets/arrow-right-01-512.png') no-repeat;
+  width: 20%;
+  height: 60%;
+
+}
+.formFieldTab:after{
+
+}

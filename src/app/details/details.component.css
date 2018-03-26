@@ -1,0 +1,27 @@
+.fcPanelTop2SubHead {
+  font-family: gotham-light;
+  font-size: 1.8333333333em;
+  color: #9b690f;
+  letter-spacing: -.2px;
+}
+ .fcHeadingImagetextSub {
+  font-family: gotham-light;
+  font-size: 2.3333333333em;
+  color: #222;
+}
+
+ .fcPanelTop3SubHead {
+  font-family: gotham-light;
+  font-size: 1.8333333333em;
+  color: #9b690f;
+  margin-bottom: 2px;
+  margin-top: -3px;
+}
+ .box{
+   border: 1px solid grey;
+   margin-top: 2%;
+   padding:2%;
+ }
+.box1{
+  background: -webkit-linear-gradient(left top,#e1ce84,#c8a354);
+}
